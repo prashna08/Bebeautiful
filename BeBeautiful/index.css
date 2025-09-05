@@ -1,0 +1,257 @@
+header{
+    width: 100%;
+    z-index: 5;
+    position: fixed; /* to make the header fixed */
+    background-color: #739b72;
+    opacity: 0.9;
+    
+}
+
+header .nav-bar{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 32px;
+}
+.nav-bar .logo-bar{
+    display: flex;
+    align-items: center;
+    
+}
+.nav-bar .logo-bar .logo-text{
+    line-height: 1;
+    font-family: vivaldi;
+    padding-right: 50px;
+    font-size: 35px;
+    color: #e7e4e4;
+}
+
+
+.nav-bar .nav-list{
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    padding-right: 70px;
+    
+} 
+
+
+.nav-bar .nav-list .nav-link{
+    font-size: 18px;
+    
+    padding: 0 15px;
+    font-family: arial;
+    color: #e7e4e4;
+    position: relative;
+}
+.nav-bar .nav-list .nav-link:hover{
+    color: #333333;
+}
+.nav-bar .nav-list .nav-link::before{
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    border-radius: 3px;
+    background-color:#333333;
+    transition: 0.3s ease;
+}
+.nav-bar .nav-list .nav-link:hover::before{
+    width: 100%;
+}
+
+/*Hero-section*/
+.hero-section{
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(45, 44, 44, 0.3), rgba(98, 96, 96, 0.3)), url(pic/bg.png);
+    background-position: center;
+    background-size: cover;
+}
+.hero-section .section-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.hero-section .hero-detail{
+    max-width: 600px;
+    color: #d1d1d1;
+    padding: 20px;
+    
+}
+.hero-section .hero-detail h1{
+    font-size: 48px;
+    padding-top: 300px;
+    text-align: center;
+    margin-bottom: 20px;
+    text-shadow: #565555 0px 1px 8px;
+    font-style: bold;
+    text-transform: uppercase;
+}
+.hero-section .hero-detail h1 span{
+    font-size: 55px;
+    color: #91c190;
+    text-shadow: #565555 0px 1px 8px;
+    font-family: aeonik-bold;
+}
+.hero-section .hero-detail .buttons{
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    
+}
+.hero-section .hero-detail .button{
+    color: #d1d1d1;
+    text-shadow: #565555 0px 1px 8px;
+    text-transform: uppercase;
+    background: #678c67;
+    padding: 20px 45px;
+    font-size: 22px;
+    border-style: none;
+    border-radius: 30px;
+    font-family: arial;
+    font-weight: bold;
+    box-shadow: 0 0 20px rgba(154, 144, 144, 0.2);
+    transition: 0.3s ease;
+}
+.hero-section .hero-detail .button:hover{
+    background:#d1d1d1 ;
+      text-shadow: #cad5c2 0px 1px 10px;
+    color: #678c67;
+    opacity: 0.9;
+}
+.hero-section .hero-detail .button:active{
+    background:#678c67;
+    color: #d1d1d1;
+    text-shadow: #565555 0px 1px 8px;
+    opacity: 1;
+}
+
+
+
+
+/*Responsive Design*/
+
+@media screen and (max-width: 900px){
+    body.show-mobile-menu header::before{
+        content: '';
+        position: fixed;
+        left:0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        backdrop-filter: blur(5px);
+        background: rgba(47, 47, 47, 0.3);
+    }
+
+    .nav-bar :where(#menu-open-button, #menu-close-button),
+    .about-section .about-details{
+        font-size: 20px;
+        display: block; 
+        background: none; /* Removes the background */
+        border: none; /* Removes any border if present */
+        outline: none; /* Removes the outline */
+        color: #e7e4e4;
+
+    }
+    .nav-bar :where( #menu-close-button)
+    {
+        color:#e7e4e4;
+    }
+    .nav-bar #menu-close-button{
+        position: absolute;
+        right: 30px;
+        top: 30px;
+    }
+
+    .nav-bar .nav-list {
+        display: block;
+        position: fixed;
+        width: 100%;
+        height: 330px;
+        left:0px;
+        top:-330px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        gap:15px;
+        background: #739b72;
+        transition: 0.5s ease;
+    }
+
+    body.show-mobile-menu .nav-bar .nav-list{
+        top: 0px;
+    }
+
+    .nav-bar .nav-list .nav-link {
+        display: block; /* Ensure each link takes full width */
+        margin-top: 0; /* Remove extra margin */
+        text-align: center; /* Center-align the text */
+        padding: 10px 0; /* Add padding for better spacing */
+        font-size: 20px;
+        color: #e7e4e4;
+    }
+    .nav-bar .nav-list .nav-link:hover{
+        color: black;
+    }
+    .nav-bar .nav-list .nav-link::before{
+        content: '';
+        position: absolute;
+        bottom: -2px;
+        left: 0;
+        width: 0;
+        height: 2px;
+        border-radius: 3px;
+        background-color:#14100f;
+        transition: 0.3s ease;
+    }
+    .hero-section .hero-detail{
+        margin-top: 50px;
+    }
+    .hero-section .hero-detail h1{
+        font-size: 36px;
+    }
+    .hero-section .hero-detail h1 span{
+        font-size: 45px;
+    }
+    .hero-section .hero-detail .button{
+        padding: 20px 36px;
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-width:900px) {
+    .nav-bar .fas{
+        display: none;
+    }
+    
+}
+
+@media screen and (max-width: 600px) {
+
+    .nav-bar .logo-bar .logo-text{
+        font-size: 30px;
+        padding-right: 20px;
+    }
+    .nav-bar .nav-list .nav-link{
+        font-size: 17px;
+    }
+
+    .hero-section .hero-detail h1{
+        font-size: 30px;
+    }
+    .hero-section .hero-detail h1 span{
+        font-size: 37px;
+    }
+    .hero-section .hero-detail .buttons {
+    margin-top: 30px;
+}
+    .hero-section .hero-detail .button{
+        padding: 18px 32px;
+        font-size: 15px;
+    }
+}
