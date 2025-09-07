@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .maincontainer{
+            position: relative;
+            width: 300px;
+            height: 400px;
+            
+        }
+        .card{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            transform-style: preserve-3d;
+            transition: all 0.7s ease;
+        }
+        .card:hover{
+            transform: rotateY(180deg);
+        }
+        .thefront{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-image: url(pic/asap1.jpg);
+            background-position: center;
+            background-size: cover;
+            backface-visibility: hidden;
+            
+        }
+        .theback{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            background-color: blue;
+            transform: rotateY(180deg);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="maincontainer">
+        <div class="card">
+            <div class="thefront">front</div>
+            <div class="theback">back</div>
+        </div>
+    </div>
+</body>
+</html>
