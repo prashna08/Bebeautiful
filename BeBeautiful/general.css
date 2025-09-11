@@ -33,7 +33,6 @@ button{
     font-family: arial;
     font-style: bold;
     padding: 30px 50px;
-    
     font-size: 45px;
 }
 .section-title::after{
@@ -43,7 +42,30 @@ button{
     display: block;
     margin: 10px auto 0;
     border-radius: 10px;
-    background-color: #6e3729;
+    background-color: #466b46;
+}
+.animate{
+    opacity: 0;
+    transform: translateY(30px);
+    animation: moveup 0.7s linear forwards;
+}
+
+@keyframes moveup{
+    100%{
+        opacity: 100%;
+        transform: translate(0px);
+    }
+}
+.animated {
+    opacity: 0; /* Start hidden */
+    transform: translateX(-50px); /* Start off-screen to the left */
+    transition: opacity 0.7s ease, transform 0.7s ease; /* Smooth transition */
+}
+
+/* Final state when the element is visible */
+.animated.active {
+    opacity: 1; /* Fully visible */
+    transform: translateX(0); /* Move to its original position */
 }
 @font-face{
     font-family: vivaldi;

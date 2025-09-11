@@ -15,3 +15,24 @@ menuOpenButton.click())
 navLinks.forEach(link =>{
     link.addEventListener("click", () => menuOpenButton.click());
 })
+
+
+//animation
+window.addEventListener('scroll', animated);
+
+function animated() {
+    var animated = document.querySelectorAll('.animated');
+    for (var i = 0; i < animated.length; i++) {
+        var windowHeight = window.innerHeight;
+        var elementTop = animated[i].getBoundingClientRect().top;
+        var elementVisible = 120;
+
+        if (elementTop < windowHeight - elementVisible) {
+            animated[i].classList.add('active');
+        } else {
+            animated[i].classList.remove('active');
+        }
+    }
+}
+
+
