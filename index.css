@@ -11,7 +11,7 @@ header .nav-bar{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 32px;
+    padding: 40px;
 }
 .nav-bar .logo-bar{
     display: flex;
@@ -138,7 +138,7 @@ header .nav-bar{
 
 /*About section*/
 .about-section{
-    padding: 50px 0;
+    padding: 90px 0;
 
     background-color: #f5f5dc;
 }
@@ -219,7 +219,8 @@ header .nav-bar{
     background-color: rgb(244, 243, 243);
 }
 .item-section .section-content{
-    padding-bottom: 50px;
+    padding-bottom: 90px;
+    padding-top: 40px;
 }
 .item-section .section-title{
     color: #1a1a1a;
@@ -355,7 +356,8 @@ header .nav-bar{
 /*Service Section*/
 
 .service-section{
-    padding: 40px 0;
+    padding: 60px 0;
+    padding-bottom: 100px;
     background-color: rgb(13, 76, 23);;
     color: #e7e4e4;
 }
@@ -444,13 +446,100 @@ header .nav-bar{
 .service-section .service-container .container .detail a:hover{
     border-bottom-right-radius: 5px;
 }
+/*Testinominal Section*/
+.testinominal-section{
+    padding: 80px 0;
+    background-color: #e7e4e4;
+}
+.testinominal-section .title{
+    font-size: 24px;
+    font-family: gonero;
+}
+.testinominal-section .subtitle{
+    font-size: 45px;
+    font-family: gonero;
+}
+.testinominal-section .subtitle span{
+    font-family: gonero;
+    font-weight: bold;
+    color: #2c572c;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+.testinominal-section .testinominal-container{
+    display: flex;
+    justify-content: center; 
+    gap: 40px;
+    margin: 30px;
+    margin-top: 70px;
+    flex-wrap: wrap;
+}
+.testinominal-section .testinominal-container .container{
+    width: 400px;
+    height: 300px;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #e0dfdf;
+    transition: 0.3s ease;
+    box-shadow: 10px 5px 20px rgba(133, 133, 133, 0.5);
+}
+.testinominal-section .testinominal-container .container:hover{
+    background-color: #d1cfcf;
+}
+.testinominal-section .testinominal-container .container .profile{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.testinominal-section .testinominal-container .container .profile img{
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.testinominal-section .testinominal-container .container .detail{
+    text-align: center;
+}
+.testinominal-section .testinominal-container .container .detail .rating .checked{
+    color: orange;
+    margin: 10px 0;
+}
+.testinominal-section .testinominal-container .container .detail .name{
+    margin: 10px 0;
+    font-size: 18px;
+    font-family: gonero;
+    font-weight: bold;
+}
+.testinominal-section .testinominal-container .container .detail .review{
+    font-family: gonero;
+    font-weight: bold;
+    font-size: 13px;
+}
+.testinominal-section .link{
+    padding: 0 80px;
+    padding-top: 20px;
+}
+.testinominal-section .link a{
+    color: rgb(29, 29, 29);
+    transition: all 0.3s ease;
+    font-weight: bold;
+    font-family: gonero;
+    font-size: 18px;
+}
+.testinominal-section .link a:hover{
+    color: #2b6a2b;
+  
+}
 /*Price Section*/
 .price-section{
     background-color: #f0f0f0;
-    padding: 30px 0;
+    padding: 60px 0;
 }
 .price-section .title{
-    font-size: 50px;
+    font-size: 45px;
     font-family: gonero;
 }
 .price-section .title span{
@@ -594,7 +683,7 @@ header .nav-bar{
 
 /*Contact section*/
 .contact-section{
-    background-color: #f0f0f0;
+    background-color: #eaeaea;
 }
 .contact-section .section-content{
     padding: 80px 0;
@@ -676,7 +765,7 @@ header .nav-bar{
 }
 .contact-section .contact-detail{
     width: 360px;
-    height: 440px;
+    height: 490px;
     background-color: rgb(13, 76, 23);;
     color: #e7e4e4;
     border-radius: 10px;
@@ -687,9 +776,16 @@ header .nav-bar{
 .contact-section .contact-detail .detail{
     display: flex;
     flex-direction: column;
-    margin-bottom: 40px;
-    
-
+    margin-bottom: 20px;
+}
+.contact-section .contact-detail .detail a{
+    font-size: 20px;
+    color: #e7e4e4;
+    transition: all 0.3s ease;
+}
+.contact-section .contact-detail .detail a:hover{
+      color: rgb(220, 185, 47);
+      
 }
 .contact-section .contact-detail .detail .title{
     font-size: 25px;
@@ -712,7 +808,7 @@ iframe{
 }
 
 .footer-section{
-    padding: 35px 0;
+    padding: 50px 0;
     background-color: #2c572c;
     
 }
@@ -748,6 +844,7 @@ iframe{
 }
 .footer-section .nav-link-list .nav-item a:hover{
     color: rgb(220, 185, 47);
+    font-size: 21px;
 }
 .footer-section .policy-text .separator{
     margin: 0 5px;
@@ -799,13 +896,13 @@ iframe{
         display: block;
         position: fixed;
         width: 100%;
-        height: 330px;
+        height: 340px;
         left:0px;
-        top:-330px;
+        top:-340px;
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding: 20px;
+        padding: 28px;
         gap:15px;
         background: #40663e;
         transition: 0.5s ease;
@@ -899,7 +996,28 @@ iframe{
     .item-section .main-container .theback .paragraph{
         font-size: 15px;
     }
+/*testinominals*/
+    .testinominal-section .testinominal-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+        justify-items: center;
+    }
+    .testinominal-section .testinominal-container .container {
+        width: 90vw;
+        max-width: 340px;
+        height: 260px;
+    }
 
+    .testinominal-section .testinominal-container .container .detail .name{
+        font-size: 16px;
+        margin-top: 2px;
+        margin-bottom: 2px;
+    }
+    .testinominal-section .testinominal-container .container .detail .review{
+        font-size: 12px;
+    }
+    /*price section*/
     .price-section .button a{
         font-size: 16px;
         padding: 18px 27px;
@@ -1029,6 +1147,23 @@ iframe{
     .service-section .service-container .container .detail a{
         padding: 10px 16px;
         font-size: 14px;
+    }
+    .testinominal-section .testinominal-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 30px;
+        justify-items: center;
+    }
+    .testinominal-section .testinominal-container .container {
+        width: 90vw;
+        max-width: 320px;
+        height: 250px;
+    }
+    .testinominal-section .link{
+        text-align: center;
+    }
+    .testinominal-section .link a{
+        font-size: 16px;
     }
     .price-section .details{
         width: 100%;
