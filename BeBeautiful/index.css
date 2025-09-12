@@ -504,6 +504,12 @@ header .nav-bar{
     display: flex;
     justify-content: space-between;
 }
+.price-section .detail .service-box{
+        display: flex;
+       align-items: center;
+        flex-direction: row;
+        gap: 30px;
+}
 .price-section .detail .service{
     font-size: 20px;
     font-family: gonero;
@@ -518,7 +524,7 @@ header .nav-bar{
     margin-top: 8px;
     width: 95%;
     font-family: gonero;
-    margin-bottom: 5px;
+    margin-bottom: 8px;
 }
 .price-section .detail .time{
     font-size: 16px;
@@ -1042,6 +1048,7 @@ iframe{
     .price-section .detail .service{
         font-size: 18px;
     }
+
     .price-section .detail .paragraph{
         font-size: 13px;
     }
@@ -1057,6 +1064,9 @@ iframe{
     }
     .price-section .detail .time{
         font-size: 15px;
+    }
+    .price-section .detail .price{
+        font-size: 14px;
     }
       .contact-section .contact,
     .contact-section .contact-detail {
