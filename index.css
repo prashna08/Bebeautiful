@@ -607,6 +607,7 @@ header .nav-bar{
 }
 .price-section .detail .name{
     margin-bottom: 10px;
+    width: 70%;
 }
 .price-section .detail .paragraph{
     font-size: 14px;
@@ -639,28 +640,6 @@ header .nav-bar{
     gap: 10px;
     width: 100px;
     align-items: end;
-}
-.price-section .detail .paragraph-mani{
-    font-family: gonero;
-    font-size: 12px;
-    margin-top: 0px;
-    margin-bottom: 10px;
-}
-.price-section .detail .paragraph-pedi{
-    font-family: gonero;
-    font-size: 14px;
-    margin-top: 13px;
-
-}
-.price-section .detail .money-mani{
-    display: flex;
-    justify-content:center;
-    flex-direction: column;
-    gap: 10px
-}
-.price-section .detail .money-mani .price{
-    justify-content: center;
-    margin-bottom: 5px;
 }
 .price-section .button{
     display: flex;
