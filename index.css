@@ -1069,14 +1069,14 @@ iframe{
         width: 90%;
     }
     .about-section .about-detail .title p{
-        font-size: 32px;
+        font-size: 34px;
         text-transform: uppercase;
         padding-bottom: 5px;
         
     }
     .about-section .about-detail .title p span{
         font-weight: bold;
-        font-size: 38px;
+        font-size: 40px;
         color: #678c67;
         
     }
@@ -1090,7 +1090,7 @@ iframe{
     }
     .about-section .about-detail .call .button{
         padding: 15px 24px;
-        font-size: 14px;
+        font-size: 16px;
         border-radius: 30px;
         background-color: #061b06;
         color:#e7e4e4;
@@ -1098,12 +1098,13 @@ iframe{
     }
 
     .item-section .section-title{
-        font-size: 32px;
+        font-size: 33px;
+        margin-bottom: 50px;
     }
     .item-section .beauty-container img,
     .item-section .beauty-container .main-container {
         width: 280px;
-        height: 350px;
+        height: 340px;
     }
     .item-section .main-container .theback .paragraph{
         font-size: 12px;
@@ -1183,6 +1184,9 @@ iframe{
     .price-section .detail .price{
         font-size: 14px;
     }
+      .contact-section .section-content{
+        flex-direction: column-reverse;
+      }
       .contact-section .contact,
     .contact-section .contact-detail {
         width: 95vw;
