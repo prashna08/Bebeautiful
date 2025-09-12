@@ -1104,7 +1104,7 @@ iframe{
     .item-section .beauty-container img,
     .item-section .beauty-container .main-container {
         width: 280px;
-        height: 340px;
+        height: 350px;
     }
     .item-section .main-container .theback .paragraph{
         font-size: 12px;
@@ -1166,17 +1166,7 @@ iframe{
 
     .price-section .detail .paragraph{
         font-size: 13px;
-        margin-bottom: 9px;
-    }
-    .price-section .detail .paragraph-pedi{
-        font-size: 13px;
-    }
-    .price-section .detail .paragraph-mani{
-        font-size: 10px;
-    }
-    .price-section .detail .money-mani{
-        gap: 10px;
-        margin-bottom: 36px;
+        margin-bottom: 10.5px;
     }
     .price-section .detail .time{
         font-size: 15px;
