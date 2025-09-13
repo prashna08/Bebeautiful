@@ -20,9 +20,9 @@ header .nav-bar{
 }
 .nav-bar .logo-bar .logo-text{
     line-height: 1;
-    font-family: vivaldi;
+    font-family: vivac;
     padding-right: 50px;
-    font-size: 35px;
+    font-size: 45px;
     color: #e7e4e4;
 }
 
@@ -689,7 +689,7 @@ header .nav-bar{
 }
 .contact-section .contact-title .subtitle span{
     color: #568656;
-    font-family: vivaldi;
+    font-family: vivac;
     font-weight: bold;
 }
 .contact-section .contact input{
@@ -1034,7 +1034,7 @@ iframe{
 @media screen and (max-width: 600px) {
 
     .nav-bar .logo-bar .logo-text{
-        font-size: 30px;
+        font-size: 35px;
 
     }
     .nav-bar .nav-list .nav-link{
