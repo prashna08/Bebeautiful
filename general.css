@@ -75,3 +75,7 @@ button{
     font-family: gonero;
     src: url(font/gonero.ttf);
 }
+@font-face{
+    font-family: vivac;
+    src: url(font/VIVACS.TTF);
+}
