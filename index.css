@@ -538,7 +538,7 @@ header .nav-bar{
 }
 /*Price Section*/
 .price-section{
-    background-color: #f0f0f0;
+    background-color: #e0e0e0;
     padding: 60px 0;
 }
 .price-section .title{
@@ -749,7 +749,7 @@ header .nav-bar{
 .contact-section .contact-detail{
     width: 360px;
     height: 490px;
-    background-color: rgb(13, 76, 23);;
+    background-color: rgb(13, 76, 23);
     color: #e7e4e4;
     border-radius: 10px;
     box-shadow: 0 0 10px rgb(103, 103, 103);
@@ -791,7 +791,7 @@ iframe{
 }
 
 .footer-section{
-    padding: 50px 0;
+    padding: 60px 0;
     background-color: #2c572c;
     
 }
@@ -799,9 +799,21 @@ iframe{
     padding: 10px;
     display: flex;
     align-items:center;
-    justify-content: space-between;
+    justify-content: space-around;
 }
-
+.footer-section .about{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+.footer-section .about .title img{
+    width: 250px;
+}
+.footer-section .about .paragraph{
+color: #e7e4e4;
+font-family: gonero;
+margin-top: 10px;
+}
 .footer-section :where(.copyright-text, .social-link, .policy-link){
     color: #e7e4e4;
     font-size: 17px;
@@ -810,34 +822,67 @@ iframe{
 .footer-section .nav-link-list{
     display: flex;
     align-items: center;
-    gap: 25px;
+    gap: 40px;
     color: #e7e4e4;
 }
 .footer-section .nav-link-list .nav-list{
     font-family: gonero;
     display: flex;
-    gap: 30px;
+    flex-direction: column;
+    gap: 20px;
+}
+.footer-section .nav-link-list .nav-list .info{
+    font-size: 24px;
+    font-family: gonero;
+    font-weight: bold;
+
 }
 .footer-section .nav-link-list .nav-item a{
     color: #e7e4e4;
     font-family: gonero;
     font-size: 17px;
-    font-weight: bold;
-     transition: all 0.3s ease;
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
 .footer-section .nav-link-list .nav-item a:hover{
     color: rgb(220, 185, 47);
-    font-size: 21px;
 }
-.footer-section .policy-text .separator{
-    margin: 0 5px;
-    color: #e7e4e4;
+.footer-section .nav-link-list .nav-item i{
+    margin-right: 5px;
 }
+.footer-section .nav-item .paragraph{
+    font-family: gonero;
+    margin-bottom: 5px;
+}
+
 .last-section{
-    text-align: center;
     padding: 15px 0;
     color: #0d0f0d;
     background-color: #f5f5dc;
+    
+}
+.last-section .section-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.last-section .rights{
+    text-align: center;
+}
+.last-section .rights p{
+    font-family: gonero;
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+.last-section .policy .policy-text a{
+    align-items: center;
+    font-weight: bold;
+    color: #0d0f0d;
+    font-family: gonero;
+}
+.last-section .policy .policy-text .separator{
+    margin: 0 5px;
+    color: #0d0f0d;
 }
 
 
@@ -933,7 +978,9 @@ iframe{
         padding: 20px 36px;
         font-size: 20px;
     }
-
+    .about-section{
+        padding: 72px 0;
+    }
     .about-section .section-content{
         display: flex;
         flex-direction: column-reverse;
@@ -969,7 +1016,14 @@ iframe{
     }
 
     /* Item */
-
+    .item-section .beauty-container img,
+    .item-section .beauty-container .main-container {
+        width: 280px;
+        height: 390px;
+    }
+    .item-section .beauty-container{
+        gap: 40px;
+    }
     .item-section .main-container .theback .title{
         font-size: 28px;
     }
@@ -1015,8 +1069,17 @@ iframe{
 
     .footer-section .section-content{
         flex-direction: column;
-        gap: 20px;
+        gap: 45px;
         padding: 0px 0px;
+    }
+    .footer-section .about{
+        width: 85%;
+    }
+    .last-section .rights p{
+        font-size: 14px;
+    }
+    .last-section .policy-text a{
+        font-size: 14px;
     }
     iframe{
         height: 450px;
@@ -1083,8 +1146,8 @@ iframe{
     .about-section .about-detail .subtitle{
         padding-bottom: 30px;
         font-size: 13px;
+        
     }
-
     .about-section .about-detail .call{
         margin-top: 20px;
     }
@@ -1214,13 +1277,22 @@ iframe{
      iframe{
         height: 300px;
     }
-    .footer-section :where(.copyright-text, .social-link, .policy-link){
+    .footer-section .about .title img{
+        width: 200px;
+    }
+    .footer-section .about .paragraph{
         font-size: 14px;
     }
-    .footer-section .nav-link-list .nav-item a{
-        font-size: 14px;
+    .footer-section .nav-link-list{
+        flex-direction: column;
+        align-items: normal;
     }
+    .footer-section
     .last-section{
         font-size: 14px;
+    }
+    .last-section .section-content{
+        flex-direction: column;
+        gap: 8px;
     }
 }
